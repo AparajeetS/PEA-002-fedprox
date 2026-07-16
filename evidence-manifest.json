@@ -27,5 +27,5 @@
     {"path": "results_minibatch200_drop90/metadata.json", "sha256": "59cfcde9c2ffc8878190c3eb5907f39813b770bfe475c650e6d1789db87b8a2a", "role": "run_provenance"},
     {"path": "results_minibatch200_drop90/curves.csv", "sha256": "b9c0cc7ab13bb1b31d964219b770e29979538bfa009d391fe27f807c8d22b38b", "role": "round_level_results"}
   ],
-  "corrections": "https://github.com/AparajeetS/phason-evidence-audit-PEA-002-fedprox/issues/new?template=correction.yml"
+  "corrections": "https://github.com/AparajeetS/PEA-002-fedprox/issues/new?template=correction.yml"
 }

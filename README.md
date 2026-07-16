@@ -3,7 +3,7 @@
 <p align="center"><strong>PHASON LABS / INDEPENDENT EVIDENCE AUDIT</strong></p>
 <p align="center">
   <img alt="Verdict: supported with qualifications" src="https://img.shields.io/badge/verdict-supported%20with%20qualifications-7045ff">
-  <a href="https://github.com/AparajeetS/phason-evidence-audit-PEA-002-fedprox/actions/workflows/verify-evidence.yml"><img alt="Evidence integrity" src="https://img.shields.io/badge/evidence-SHA--256%20verified-171820"></a>
+  <a href="https://github.com/AparajeetS/PEA-002-fedprox/actions/workflows/verify-evidence.yml"><img alt="Evidence integrity" src="https://img.shields.io/badge/evidence-SHA--256%20verified-171820"></a>
   <img alt="Audit ID PEA-002" src="https://img.shields.io/badge/audit-PEA--002-292a31">
   <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-292a31">
 </p>
