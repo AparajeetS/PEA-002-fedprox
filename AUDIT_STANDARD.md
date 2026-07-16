@@ -20,7 +20,7 @@ A Phason Evidence Audit (PEA) is a claim-level, independent technical evaluation
 
 ## Integrity and corrections
 
-Recorded artifacts are pinned by SHA-256 in `evidence-manifest.json` and checked automatically by GitHub Actions. Authors and maintainers may submit context or corrections through the repository’s correction issue form. Accepted changes are versioned; prior evidence is not silently overwritten.
+Recorded text artifacts are normalized to LF, pinned by SHA-256 in `evidence-manifest.json`, and checked automatically by GitHub Actions so verification is identical across operating systems. Authors and maintainers may submit context or corrections through the repository’s correction issue form. Accepted changes are versioned; prior evidence is not silently overwritten.
 
 ## Commission an audit
 

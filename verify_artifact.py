@@ -8,15 +8,25 @@ ROOT = Path(__file__).resolve().parent
 MANIFEST = ROOT / "evidence-manifest.json"
 
 
+def digest(path: Path, mode: str) -> str:
+    data = path.read_bytes()
+    if mode == "text_lf":
+        data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    elif mode != "raw":
+        raise ValueError(f"unsupported hash mode: {mode}")
+    return hashlib.sha256(data).hexdigest()
+
+
 def main() -> int:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    hash_mode = manifest.get("hash_mode", "raw")
     failures = []
     for artifact in manifest["artifacts"]:
         path = ROOT / artifact["path"]
         if not path.is_file():
             failures.append(f"missing: {artifact['path']}")
             continue
-        observed = hashlib.sha256(path.read_bytes()).hexdigest()
+        observed = digest(path, artifact.get("hash_mode", hash_mode))
         if observed != artifact["sha256"]:
             failures.append(f"hash mismatch: {artifact['path']} (expected {artifact['sha256']}, observed {observed})")
         else:
