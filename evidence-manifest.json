@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "PEA-002",
+  "title": "FedProx heterogeneous-federated optimization audit",
+  "audit_date": "2026-07-16",
+  "auditor": "Aparajeet Shadangi, Phason Labs",
+  "source": {
+    "repository": "https://github.com/litian96/FedProx",
+    "commit": "d2a4501f319f1594b732d88315c5ca1a72855f50",
+    "paper": "https://arxiv.org/abs/1812.06127"
+  },
+  "claim_tested": "Does FedProx recover the claimed qualitative advantage under the hardest bundled heterogeneous synthetic condition?",
+  "verdict": {
+    "label": "supported_with_qualifications",
+    "summary": "The independent reproduction recovered the claimed ordering under 90% stragglers; it does not independently establish the five-dataset headline average."
+  },
+  "key_results": {
+    "fedavg_drop_accuracy": 0.5857933579335793,
+    "retain_partial_work_accuracy": 0.6900369003690037,
+    "fedprox_mu1_accuracy": 0.7195571955719557,
+    "rounds": 200
+  },
+  "artifacts": [
+    {"path": "audit.py", "sha256": "c7ce646490fa0648db195997c78e2882038cb5caa49da893d9dbce4cb3e9ff62", "role": "executable_protocol"},
+    {"path": "results_minibatch200_drop90/summary.csv", "sha256": "73113f703b9a489f7ed2a1f15bff49ccfa3395912ac49301b120e9b5f1fb93ce", "role": "primary_summary"},
+    {"path": "results_minibatch200_drop90/metadata.json", "sha256": "2185b8a67322fed68b88d5675c02aa24897a674b7d367d4364ad71ca82331f98", "role": "run_provenance"},
+    {"path": "results_minibatch200_drop90/curves.csv", "sha256": "8eee85dd0c93cf279f0f43813b9b6100c0ab93488817ea9cd4ab5d940f000de2", "role": "round_level_results"}
+  ],
+  "corrections": "https://github.com/AparajeetS/phason-evidence-audit-fedprox/issues/new?template=correction.yml"
+}

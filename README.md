@@ -1,5 +1,30 @@
 # Phason Evidence Audit 002 — FedProx
 
+<p align="center"><strong>PHASON LABS / INDEPENDENT EVIDENCE AUDIT</strong></p>
+<p align="center">
+  <img alt="Verdict: supported with qualifications" src="https://img.shields.io/badge/verdict-supported%20with%20qualifications-7045ff">
+  <a href="https://github.com/AparajeetS/phason-evidence-audit-fedprox/actions/workflows/verify-evidence.yml"><img alt="Evidence integrity" src="https://img.shields.io/badge/evidence-SHA--256%20verified-171820"></a>
+  <img alt="Audit ID PEA-002" src="https://img.shields.io/badge/audit-PEA--002-292a31">
+  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-292a31">
+</p>
+
+![PEA-002 evidence summary](assets/evidence-summary.svg)
+
+<p align="center"><a href="REPORT.md"><strong>Full technical report</strong></a> · <a href="RUN_LOG.md">Run ledger</a> · <a href="evidence-manifest.json">Evidence manifest</a> · <a href="AUDIT_STANDARD.md">Audit standard</a></p>
+
+> **Executive decision:** the independent reproduction recovered the claimed method ordering in the hardest bundled synthetic condition. Retaining partial work added 10.42 accuracy points and the proximal term added 2.95 more. This scoped result does not establish the paper’s five-dataset headline average.
+
+## Evidence package
+
+| Layer | What is pinned here |
+| --- | --- |
+| Claim | FedProx advantage under severe systems heterogeneity |
+| Source | Upstream repository and exact commit `d2a4501` |
+| Execution | 200 communication rounds under 90% stragglers |
+| Record | Round-level curves, summary table, environment metadata |
+| Integrity | SHA-256 manifest plus automated verification workflow |
+| Corrections | Versioned correction issue form for authors and maintainers |
+
 An independent, no-fee reproducibility audit of the open-source artifact for:
 
 > Li et al., *Federated Optimization in Heterogeneous Networks* (MLSys 2020)
@@ -59,3 +84,9 @@ This is an artifact audit, not an allegation of misconduct. It distinguishes the
 ## License
 
 Audit code and report: MIT. The original FedProx code and bundled data remain governed by their upstream terms and are not redistributed here.
+
+---
+
+### Need an independent answer before you ship or publish?
+
+Phason Labs runs tightly scoped ML evidence audits with a reproducible record, an explicit verdict, and a private correction window. [Request an audit](mailto:aparajeet.shadangi@proton.me?subject=Independent%20evidence%20audit%20enquiry).

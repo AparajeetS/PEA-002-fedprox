@@ -1,0 +1,32 @@
+name: Correction or additional context
+description: Submit evidence that may change this audit's record or interpretation.
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: finding
+    attributes:
+      label: Finding or artifact
+      description: Which report section, result, or file does this concern?
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction or context
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Provide links, commits, logs, data, or a minimal reproduction.
+    validations:
+      required: true
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Transparency
+      options:
+        - label: I understand that accepted corrections will be recorded as a versioned change rather than silently replacing the prior record.
+          required: true
